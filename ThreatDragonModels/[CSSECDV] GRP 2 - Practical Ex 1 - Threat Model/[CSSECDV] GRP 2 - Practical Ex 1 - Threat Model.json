@@ -487,8 +487,8 @@
           },
           {
             "position": {
-              "x": 997.5,
-              "y": 360
+              "x": 1160,
+              "y": 1000
             },
             "size": {
               "width": 170,
@@ -1302,8 +1302,8 @@
             },
             "vertices": [
               {
-                "x": 595,
-                "y": 680
+                "x": 540,
+                "y": 1020
               },
               {
                 "x": 560,
@@ -1661,7 +1661,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Submits Menu informati"
+              "Submits Menu i"
             ],
             "id": "d30909b4-a45c-48cf-a61e-effee5ba8a87",
             "source": {
