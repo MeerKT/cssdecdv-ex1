@@ -1804,6 +1804,107 @@
             "data": {
               "type": "tm.Boundary",
               "name": "Trust Boundary",
+              "description": "Third-party services are external and partially trusted; communication channels are \nsecured, but data received from them is validated.",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "6c10a764-2731-4d81-956b-228fa773b31a",
+            "source": {
+              "x": 970,
+              "y": 160
+            },
+            "target": {
+              "x": 950,
+              "y": 990
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "The MongoDB database server trusts calls from the web application server’s identity",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "0262d104-c098-4057-a7b5-992a672f7a2b",
+            "source": {
+              "x": -100,
+              "y": 710
+            },
+            "target": {
+              "x": 1130,
+              "y": 720
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -1813,21 +1914,15 @@
             "labels": [
               "Trust Boundary"
             ],
-            "id": "e6cc7a6e-2a11-4f4e-94e9-fa12380e2858",
+            "id": "975ce5a4-ca78-48b9-8f32-54ac3bf4a7fa",
             "source": {
-              "x": 40,
-              "y": 250
+              "x": 230,
+              "y": 340
             },
             "target": {
-              "x": 1080,
-              "y": 250
-            },
-            "vertices": [
-              {
-                "x": 40,
-                "y": 680
-              }
-            ]
+              "x": 330,
+              "y": 440
+            }
           }
         ],
         "description": "Coffee Ordering  Web App"
