@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 60,
-              "y": 430
+              "x": -260,
+              "y": 420
             },
             "size": {
               "width": 140,
@@ -136,8 +136,8 @@
           },
           {
             "position": {
-              "x": 525,
-              "y": 155
+              "x": 857.5,
+              "y": -50
             },
             "size": {
               "width": 140,
@@ -253,8 +253,8 @@
           },
           {
             "position": {
-              "x": 60,
-              "y": 565
+              "x": -260,
+              "y": 535
             },
             "size": {
               "width": 140,
@@ -359,7 +359,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "Manager",
-              "description": "",
+              "description": "3.5 Manager displays the basic sales report on their web browser.",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -370,8 +370,8 @@
           },
           {
             "position": {
-              "x": 736.25,
-              "y": 190
+              "x": 140,
+              "y": -45
             },
             "size": {
               "width": 140,
@@ -476,7 +476,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "Administrator",
-              "description": "",
+              "description": "4.1. Administrator logs into the staff interface and navigates to the menu management section. ",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -607,8 +607,8 @@
           },
           {
             "position": {
-              "x": 500,
-              "y": 780
+              "x": 420,
+              "y": 1510
             },
             "size": {
               "width": 190,
@@ -896,8 +896,8 @@
             },
             "vertices": [
               {
-                "x": 350,
-                "y": 440
+                "x": 180,
+                "y": 420
               }
             ]
           },
@@ -1094,8 +1094,8 @@
             },
             "vertices": [
               {
-                "x": 390,
-                "y": 300
+                "x": 620,
+                "y": 160
               }
             ]
           },
@@ -1144,7 +1144,12 @@
               "cell": "fc246daf-0e95-4483-863f-d755955634e5",
               "port": "db6d91af-09ad-4612-8b28-2d35e0de095d"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 770,
+                "y": 160
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1193,8 +1198,8 @@
             },
             "vertices": [
               {
-                "x": 800,
-                "y": 310
+                "x": 870,
+                "y": 280
               }
             ]
           },
@@ -1299,6 +1304,10 @@
               {
                 "x": 595,
                 "y": 680
+              },
+              {
+                "x": 560,
+                "y": 760
               }
             ]
           },
@@ -1349,8 +1358,8 @@
             },
             "vertices": [
               {
-                "x": 410,
-                "y": 670
+                "x": 270,
+                "y": 930
               }
             ]
           },
@@ -1453,8 +1462,12 @@
             },
             "vertices": [
               {
-                "x": 350,
+                "x": 30,
                 "y": 540
+              },
+              {
+                "x": 270,
+                "y": 500
               }
             ]
           },
@@ -1505,8 +1518,8 @@
             },
             "vertices": [
               {
-                "x": 190,
-                "y": 670
+                "x": 20,
+                "y": 940
               }
             ]
           },
@@ -1531,7 +1544,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Sends Aggregated Sales",
-              "description": "",
+              "description": "3.3  MongoDB Database retrieves the requested sales data and sends it back to the Web Application Server.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1560,17 +1573,106 @@
                 "x": 940,
                 "y": 660
               }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Sends a response on Sales data",
+              "description": " 3,4 Web Application Server processes the sales data (e.g., calculates totals, formats for display) and sends it as a response to the Manager.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Sends a response on Sales data"
             ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "id": "6b997d64-4071-441b-bfd1-73993d61d982",
+            "source": {
+              "cell": "0e124798-ab3d-4eb2-b306-5454fe0dbf05",
+              "port": "41ae393a-cc2c-4820-8504-d230b384a20c"
+            },
+            "target": {
+              "cell": "0e63eb10-894e-4d76-8462-e236a5f2fd7a",
+              "port": "7f468d6d-49f8-4173-a45d-1ffdb8a46c41"
+            },
+            "vertices": [
+              {
+                "x": 220,
+                "y": 570
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Submits Menu information",
+              "description": "4.2. Administrator inputs details for a new menu item (name, description, price, etc.) and submits the information to the Web Application Server. ",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Submits Menu informati"
+            ],
+            "id": "d30909b4-a45c-48cf-a61e-effee5ba8a87",
+            "source": {
+              "cell": "bf23afe7-53f9-4ad8-8a28-b6c7ec56cdb8",
+              "port": "db6d91af-09ad-4612-8b28-2d35e0de095d"
+            },
+            "target": {
+              "cell": "0e124798-ab3d-4eb2-b306-5454fe0dbf05",
+              "port": "3043d3b5-882e-4cad-b402-111a1dce3002"
+            },
+            "vertices": []
           }
         ],
         "description": "Coffee Ordering  Web App"
