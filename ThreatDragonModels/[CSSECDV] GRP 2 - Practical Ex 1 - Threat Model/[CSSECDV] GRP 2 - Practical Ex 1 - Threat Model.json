@@ -1895,34 +1895,6 @@
               ],
               "name": null
             }
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Trust Boundary"
-            ],
-            "id": "975ce5a4-ca78-48b9-8f32-54ac3bf4a7fa",
-            "source": {
-              "x": 230,
-              "y": 340
-            },
-            "target": {
-              "x": 330,
-              "y": 440
-            }
           }
         ],
         "description": "Coffee Ordering  Web App"
