@@ -476,7 +476,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "Administrator",
-              "description": "4.1. Administrator logs into the staff interface and navigates to the menu management section. ",
+              "description": "4.1. Administrator logs into the staff interface and navigates to the menu management section. \n\n4.7. Administrator receives confirmation of the new menu item being added.",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -487,8 +487,8 @@
           },
           {
             "position": {
-              "x": 1160,
-              "y": 1000
+              "x": 1170,
+              "y": 360
             },
             "size": {
               "width": 170,
@@ -1250,8 +1250,12 @@
             },
             "vertices": [
               {
-                "x": 770,
-                "y": 660
+                "x": 650,
+                "y": 750
+              },
+              {
+                "x": 700,
+                "y": 990
               }
             ]
           },
@@ -1302,7 +1306,7 @@
             },
             "vertices": [
               {
-                "x": 540,
+                "x": 515,
                 "y": 1020
               },
               {
@@ -1410,8 +1414,16 @@
             },
             "vertices": [
               {
-                "x": 970,
-                "y": 780
+                "x": 1280,
+                "y": 710
+              },
+              {
+                "x": 1230,
+                "y": 870
+              },
+              {
+                "x": 1070,
+                "y": 1050
               }
             ]
           },
@@ -1570,8 +1582,8 @@
             },
             "vertices": [
               {
-                "x": 940,
-                "y": 660
+                "x": 860,
+                "y": 880
               }
             ]
           },
@@ -1647,8 +1659,8 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Submits Menu information",
-              "description": "4.2. Administrator inputs details for a new menu item (name, description, price, etc.) and submits the information to the Web Application Server. ",
+              "name": "Sends New Menu Item Data",
+              "description": "4.4. Web Application Server sends the new menu item data to the MongoDB Database for creation. ",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1661,18 +1673,161 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Submits Menu i"
+              "Sends New Menu Item Data"
             ],
-            "id": "d30909b4-a45c-48cf-a61e-effee5ba8a87",
+            "id": "614084ff-d7ef-4448-a661-88128188e41e",
             "source": {
-              "cell": "bf23afe7-53f9-4ad8-8a28-b6c7ec56cdb8",
-              "port": "db6d91af-09ad-4612-8b28-2d35e0de095d"
+              "cell": "0e124798-ab3d-4eb2-b306-5454fe0dbf05",
+              "port": "325c08a1-dabb-496e-96af-71061de08696"
             },
             "target": {
+              "cell": "2104968c-1029-4ac8-bebe-dc16203fa308",
+              "port": "119271d1-cfa4-4e56-96ca-c3f12c1755d2"
+            },
+            "vertices": [
+              {
+                "x": 920,
+                "y": 1060
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Sends Confirmation",
+              "description": "4.6. Web Application Server sends a confirmation of the successful menu item addition back to the Administrator. ",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Sends Confirmation"
+            ],
+            "id": "3c144702-f380-4148-9169-faa35189a52e",
+            "source": {
               "cell": "0e124798-ab3d-4eb2-b306-5454fe0dbf05",
               "port": "3043d3b5-882e-4cad-b402-111a1dce3002"
             },
-            "vertices": []
+            "target": {
+              "cell": "bf23afe7-53f9-4ad8-8a28-b6c7ec56cdb8",
+              "port": "db6d91af-09ad-4612-8b28-2d35e0de095d"
+            },
+            "vertices": [
+              {
+                "x": 320,
+                "y": 230
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Inputs New Menu Item",
+              "description": " 4.2 Administrator inputs details for a new menu item (name, description, price, etc.) and submits the information to the Web Application Server.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Inputs New Menu Item"
+            ],
+            "id": "7850391e-7c17-4dab-bc64-f2ce126a116a",
+            "source": {
+              "cell": "0e124798-ab3d-4eb2-b306-5454fe0dbf05",
+              "port": "3043d3b5-882e-4cad-b402-111a1dce3002"
+            },
+            "target": {
+              "cell": "bf23afe7-53f9-4ad8-8a28-b6c7ec56cdb8",
+              "port": "db6d91af-09ad-4612-8b28-2d35e0de095d"
+            },
+            "vertices": [
+              {
+                "x": 450,
+                "y": 180
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "e6cc7a6e-2a11-4f4e-94e9-fa12380e2858",
+            "source": {
+              "x": 40,
+              "y": 250
+            },
+            "target": {
+              "x": 1080,
+              "y": 250
+            },
+            "vertices": [
+              {
+                "x": 40,
+                "y": 680
+              }
+            ]
           }
         ],
         "description": "Coffee Ordering  Web App"
