@@ -1,0 +1,27 @@
+{
+  "version": "2.6.0",
+  "summary": {
+    "title": "[CSSECDV] GRP 2 - Practical Ex 1 - Threat Model",
+    "owner": "",
+    "description": "Threat Model for Coffee Ordering  Web App",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "New STRIDE diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.0",
+        "cells": [],
+        "description": "Coffee Ordering  Web App"
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
